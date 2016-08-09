@@ -1,0 +1,526 @@
+    body {
+        height: 100%;
+        min-height: 2000px;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container {
+        width: 980px;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        text-align: center;
+        border-top: 2px solid #6F6A6A;
+        background: #DAF1AF;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    h2 {
+        text-align: center;
+        background: #ddd;
+        height: 40px;
+        line-height: 40px;
+    }
+    /*********************demo01 css begin*********************/
+    
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(720deg);
+        }
+    }
+    
+    @-ms-keyframes rotate {
+        from {
+            -ms-transform: rotate(0deg);
+        }
+        to {
+            -ms-transform: rotate(720deg);
+        }
+    }
+    
+    @-webkit-keyframes rotate {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(720deg);
+        }
+    }
+    
+    @-o-keyframes rotate {
+        from {
+            -o-transform: rotate(0deg);
+        }
+        to {
+            -o-transform: rotate(720deg);
+        }
+    }
+    
+    @-moz-keyframes rotate {
+        from {
+            -moz-transform: rotate(0deg);
+        }
+        to {
+            -moz-transform: rotate(720deg);
+        }
+    }
+    
+    .demo01 .container {
+        position: relative;
+        min-height: 222px;
+        overflow: hidden;
+    }
+    
+    .demo01 .desc_box {
+        background-image: url(../images/demo01.png);
+        background-position: 10px -37px;
+        width: 245px;
+        height: 160px;
+        float: left;
+        opacity: 0;
+        position: absolute;
+    }
+    
+    .demo01 .icon_2 {
+        background-position: -198px -37px;
+    }
+    
+    .demo01 .icon_3 {
+        background-position: -401px -37px;
+    }
+    
+    .demo01 .icon_4 {
+        background-position: -607px -37px;
+    }
+    
+    .demo01 .rotate {
+        animation: rotate 1.5s;
+        -moz-animation: rotate 1.5s;
+        -webkit-animation: rotate 1.5s;
+        -o-animation: rotate 1.5s;
+        -ms-animation: rotate 1.5s;
+    }
+    /*********************demo01 css end*********************/
+    /*********************demo02 css begin*********************/
+    
+    .demo02 .content {
+        width: 300px;
+        display: inline-block;
+        height: 350px;
+        position: relative;
+        /*background: #699A63;*/
+    }
+    
+    .demo02 .circle {
+        width: 200px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 20px auto;
+    }
+    
+    .demo02 .circle-title {
+        text-align: center;
+    }
+    
+    .demo02 .circle-inner {
+        overflow: hidden;
+        border-radius: 200px;
+        width: 200px;
+        height: 200px;
+        z-index: 1;
+        position: relative;
+        transition: all 0.5s;
+    }
+    
+    .demo02 .circle-inner:hover {
+        transform: scale(1.1);
+    }
+    
+    .demo02 .circle:hover h2,
+    .demo02 .circle:hover h3 {
+        top: -20px;
+        opacity: 1;
+    }
+    
+    .demo02 .circle:hover h2 {
+        transition: all .3s;
+    }
+    
+    .demo02 .circle:hover h3 {
+        transition: all .3s .04s;
+    }
+    
+    .demo02 .circle:hover .content-shadow {
+        transform: scale(1.1);
+        top: -22px;
+    }
+    
+    .demo02 .circle-inner:hover .circle-inner-layer:nth-of-type(1) {
+        left: -80px;
+        transition: all 4s linear;
+    }
+    
+    .demo02 .circle-inner:hover .circle-inner-layer:nth-of-type(2) {
+        left: -80px;
+        transition: all 4s linear;
+    }
+    
+    .demo02 .circle-inner:hover .circle-inner-layer:nth-of-type(3) {
+        left: -140px;
+        transition: all 4s linear;
+    }
+    
+    .demo02 .content-shadow {
+        width: 200px;
+        height: 20px;
+        box-shadow: 0px 31px 19px -2px #E0E8F9;
+        position: relative;
+        top: -44px;
+        border-radius: 70%;
+        z-index: 0;
+        transition: all 0.5s;
+    }
+    
+    .demo02 .circle-title h2 {
+        opacity: 0;
+        color: #4A7479;
+        position: relative;
+        top: -10px;
+    }
+    
+    .demo02 .circle-title h3 {
+        opacity: 0;
+        color: #B0D5D6;
+        position: relative;
+        top: -5px;
+    }
+    
+    .demo02 .circle-inner-layer {
+        width: 600px;
+        height: 200px;
+        position: absolute;
+    }
+    
+    .demo02 .circle .circle-inner-layer:nth-of-type(1) {
+        top: 0px;
+        left: 0px;
+        transition: all .4s;
+    }
+    
+    .demo02 .circle .circle-inner-layer:nth-of-type(2) {
+        top: 0px;
+        left: 0px;
+        transition: all .4s;
+    }
+    
+    .demo02 .circle .circle-inner-layer:nth-of-type(3) {
+        top: 0px;
+        left: -440px;
+        transition: all .4s;
+    }
+    /*********************demo02 css end************************/
+    /*********************demo03 css begin*********************/
+    
+    .demo03 .content {
+        width: 33.33%;
+        height: 200px;
+        background: #5e7c87;
+        float: left;
+        position: relative;
+    }
+    
+    .demo03 .btn01 {
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        width: 50%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        cursor: pointer;
+        transition: all .5s;
+        overflow: hidden;
+    }
+    
+    .demo03 .btn01::after {
+        content: attr(data-text);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(-30%, -50%) rotate(-30deg);
+        transition: all .3s;
+        opacity: 0;
+    }
+    
+    .demo03 .btn01:hover::after {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 1;
+    }
+    
+    .demo03 .btn01:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .demo03 .btn01 span {
+        opacity: 1;
+        color: #fff;
+        transition: all .3s;
+    }
+    
+    .demo03 .btn01:hover span {
+        opacity: 0;
+        transform: translate(0, 40px);
+    }
+    
+    .demo03 .btn02 {
+        width: 50%;
+        line-height: 50px;
+        height: 50px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 74px;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    .demo03 .btn02::before {
+        opacity: 1;
+        content: "";
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transition: all .3s
+    }
+    
+    .demo03 .btn02:hover::before {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    
+    .demo03 .btn02::after {
+        opacity: 0;
+        content: "";
+        background: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        left: 25%;
+        top: 25%;
+        transition: all .3s
+    }
+    
+    .demo03 .btn02:hover::after {
+        opacity: 1;
+        transform: scale(2.1);
+    }
+    
+    .demo03 .btn03 {
+        width: 50%;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        text-align: center;
+        line-height: 50px;
+        margin: 0 auto;
+        margin-top: 74px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .demo03 .btn03::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.25);
+        left: 0;
+        top: -53px;
+        border-bottom: 1px solid rgba(255, 255, 255, 1);
+        transition: all .3s;
+        opacity: 0;
+    }
+    
+    .demo03 .btn03:hover::before {
+        opacity: 1;
+        transform: translate(0px, 53px);
+    }
+    /*********************demo03 css end***********************/
+    /*********************demo04 css begin*********************/
+    
+    .demo04 a.toTop {
+        display: none;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        left: 50%;
+        bottom: 20px;
+        margin-left: 540px;
+        background: url(../images/demo04.png) no-repeat;
+    }
+    
+    .demo04 a.toTop:hover {
+        background-position: 0px -40px;
+    }
+    
+    .demo04:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /*********************demo04 css end*********************/
+    /*********************demo05 css begin*********************/
+    
+    .demo05 .demo05-01 {
+        border: 1px solid #ddd;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        font-size: 0;
+        float: left;
+        margin-right: 43px;
+        margin-top: 12px;
+        text-align: center;
+    }
+    
+    .demo05 .demo05-01 span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .demo05 .demo05-01 span img {
+        width: auto !important;
+        height: auto !important;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    
+    .demo05 .demo05-01:after {
+        content: " ";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+    
+    .container:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .demo05 .demo05-02 {
+        border: 1px solid #ddd;
+        width: 200px;
+        height: 200px;
+        margin-right: 43px;
+        margin-top: 12px;
+        float: left;
+        overflow: hidden;
+        font-size: 0;
+        text-align: center;
+        line-height: 200px;
+    }
+    
+    .demo05 .demo05-02 span img {
+        vertical-align: middle;
+        width: auto !important;
+        height: auto !important;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    
+    .demo05 .demo05-03 {
+        float: left;
+        margin-right: 43px;
+        margin-top: 12px;
+    }
+    
+    .demo05 .demo05-03 span {
+        width: 200px;
+        height: 200px;
+        display: table-cell;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .demo05 .demo05-03 span img {
+        width: auto !important;
+        height: auto !important;
+        max-width: 200px;
+        max-height: 200px;
+        vertical-align: middle;
+    }
+    
+    .demo05 .demo05-04 span {
+        float: left;
+        display: block;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ddd;
+        margin-right: 43px;
+        margin-top: 12px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .demo05 .demo05-04 span img {
+        width: auto !important;
+        height: auto !important;
+        max-width: 200px;
+        max-height: 200px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .demo05 .demo05-05 span {
+        float: left;
+        display: block;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ddd;
+        margin-right: 43px;
+        margin-top: 12px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .demo05 .demo05-05 span img {
+        width: auto !important;
+        height: auto !important;
+        max-width: 200px;
+        max-height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    /*********************demo05 css end*********************/

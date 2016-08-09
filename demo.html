@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+
+<body>
+    <div class="demo01">
+        <h1>animate与CSS3实现旋转动画</h1>
+        <div class="container">
+            <div class="desc_box icon_1"></div>
+            <div class="desc_box icon_2"></div>
+            <div class="desc_box icon_3"></div>
+            <div class="desc_box icon_4"></div>
+        </div>
+    </div>
+    <div class="demo02">
+        <h1>纯CSS3实现视觉差动画效果</h1>
+        <div class="container">
+            <div class="content">
+                <div class="circle">
+                    <div class="circle-title">
+                        <h2>Great Outdoors</h2>
+                        <h3>Get some fresh air</h3>
+                    </div>
+                    <div class="circle-inner">
+                        <div class="circle-inner-layer"><img src="images/demo02-01.png"></div>
+                        <div class="circle-inner-layer"><img src="images/demo02-02.png"></div>
+                        <div class="circle-inner-layer"><img src="images/demo02-03.png"></div>
+                    </div>
+                    <div class="content-shadow"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="circle">
+                    <div class="circle-title">
+                        <h2>City Breaks</h2>
+                        <h3>Go somewhere new</h3>
+                    </div>
+                    <div class="circle-inner">
+                        <div class="circle-inner-layer"><img src="images/demo02-04.png"></div>
+                        <div class="circle-inner-layer"><img src="images/demo02-05.png"></div>
+                        <div class="circle-inner-layer"><img src="images/demo02-06.png"></div>
+                    </div>
+                    <div class="content-shadow"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="circle">
+                    <div class="circle-title">
+                        <h2>Cheap Flights</h2>
+                        <h3>Come fly with me</h3>
+                    </div>
+                    <div class="circle-inner">
+                        <div class="circle-inner-layer"><img src="images/demo02-07.png"></div>
+                        <div class="circle-inner-layer"><img src="images/demo02-08.png"></div>
+                        <div class="circle-inner-layer"><img src="images/demo02-09.png"></div>
+                    </div>
+                    <div class="content-shadow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="demo03">
+        <h1>按钮效果</h1>
+        <div class="container">
+            <div class="content">
+                <div class="btn01" data-text="button01">
+                    <span>button01</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="btn02" data-text="button02">
+                    <span>button02</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="btn03" data-text="button03">
+                    <span>button03</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="demo04">
+        <a href="javascript:;" class="toTop" id="demo04-btn" title="回到顶部"></a>
+    </div>
+    <div class="demo05">
+        <h1>垂直居中</h1>
+        <div class="container">
+            <h2>【第一种方式：inline-block和伪元素:after实现，可惜只兼容IE9+】</h2>
+            <div class="demo05-01">
+                <span><img src="images/demo05-01.jpg" /></span>
+            </div>
+            <div class="demo05-01">
+                <span><img src="images/demo05-02.jpg" /></span>
+            </div>
+            <div class="demo05-01">
+                <span><img src="images/demo05-03.jpg" /></span>
+            </div>
+            <div class="demo05-01">
+                <span><img src="images/demo05-04.jpg" /></span>
+            </div>
+            <div class="demo05-01">
+                <span><img src="images/demo05-05.jpg" /></span>
+            </div>
+            <div class="demo05-01">
+                <span><img src="images/demo05-07.jpg" /></span>
+            </div>
+            <div class="demo05-01">
+                <span><img src="images/demo05-06.jpg" /></span>
+            </div>
+            <div class="demo05-01">
+                <span><img src="images/demo05-08.jpg" /></span>
+            </div>
+        </div>
+        <div class="container">
+            <h2>【第二种方式：利用line-height 、font-size实现，兼容IE7+】</h2>
+            <div class="demo05-02">
+                <span><img src="images/demo05-01.jpg" /></span>
+            </div>
+            <div class="demo05-02">
+                <span><img src="images/demo05-02.jpg" /></span>
+            </div>
+            <div class="demo05-02">
+                <span><img src="images/demo05-03.jpg" /></span>
+            </div>
+            <div class="demo05-02">
+                <span><img src="images/demo05-04.jpg" /></span>
+            </div>
+            <div class="demo05-02">
+                <span><img src="images/demo05-05.jpg" /></span>
+            </div>
+            <div class="demo05-02">
+                <span><img src="images/demo05-09.jpg" /></span>
+            </div>
+            <div class="demo05-02">
+                <span><img src="images/demo05-10.jpg" /></span>
+            </div>
+            <div class="demo05-02">
+                <span><img src="images/demo05-02.jpg" /></span>
+            </div>
+        </div>
+        <div class="container">
+            <h2>【第三种方式：利用table-cell实现，父元素不能有浮动和绝对定位，兼容IE8+】</h2>
+            <h2>【IE8虽然宽会被撑大，图片照样能垂直居中】</h2>
+            <div class="demo05-03">
+                <span><img src="images/demo05-01.jpg" /></span>
+            </div>
+            <div class="demo05-03">
+                <span><img src="images/demo05-02.jpg" /></span>
+            </div>
+            <div class="demo05-03">
+                <span><img src="images/demo05-03.jpg" /></span>
+            </div>
+            <div class="demo05-03">
+                <span><img src="images/demo05-04.jpg" /></span>
+            </div>
+            <div class="demo05-03">
+                <span><img src="images/demo05-05.jpg" /></span>
+            </div>
+            <div class="demo05-03">
+                <span><img src="images/demo05-13.jpg" /></span>
+            </div>
+            <div class="demo05-03">
+                <span><img src="images/demo05-11.jpg" /></span>
+            </div>
+            <div class="demo05-03">
+                <span><img src="images/demo05-12.jpg" /></span>
+            </div>
+        </div>
+        <div class="container">
+            <h2>【第四种方式：绝对定位居中，兼容IE8+】</h2>
+            <div class="demo05-04">
+                <span><img src="images/demo05-01.jpg" /></span>
+            </div>
+            <div class="demo05-04">
+                <span><img src="images/demo05-02.jpg" /></span>
+            </div>
+            <div class="demo05-04">
+                <span><img src="images/demo05-03.jpg" /></span>
+            </div>
+            <div class="demo05-04">
+                <span><img src="images/demo05-04.jpg" /></span>
+            </div>
+            <div class="demo05-04">
+                <span><img src="images/demo05-05.jpg" /></span>
+            </div>
+            <div class="demo05-04">
+                <span><img src="images/demo05-03.jpg" /></span>
+            </div>
+            <div class="demo05-04">
+                <span><img src="images/demo05-14.jpg" /></span>
+            </div>
+            <div class="demo05-04">
+                <span><img src="images/demo05-15.jpg" /></span>
+            </div>
+        </div>
+        <div class="container">
+            <h2>【第五种方式：绝对定位+transform 兼容IE9+】</h2>
+            <div class="demo05-05">
+                <span><img src="images/demo05-01.jpg" /></span>
+            </div>
+            <div class="demo05-05">
+                <span><img src="images/demo05-02.jpg" /></span>
+            </div>
+            <div class="demo05-05">
+                <span><img src="images/demo05-03.jpg" /></span>
+            </div>
+            <div class="demo05-05">
+                <span><img src="images/demo05-04.jpg" /></span>
+            </div>
+            <div class="demo05-05">
+                <span><img src="images/demo05-05.jpg" /></span>
+            </div>
+            <div class="demo05-05">
+                <span><img src="images/demo05-03.jpg" /></span>
+            </div>
+            <div class="demo05-05">
+                <span><img src="images/demo05-16.jpg" /></span>
+            </div>
+            <div class="demo05-05">
+                <span><img src="images
+/demo05-17.jpg" /></span>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="lib/require.js" data-main="main"></script>
+</body>
+
+</html>
